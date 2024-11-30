@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Listing</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="productlist.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Brand Logo -->
+      <div class="brand-logo">
+          <h1>Brand</h1>
+      </div>
+  
+      <!-- Search Bar -->
+      <div class="search-bar">
+          <input type="text" placeholder="Search for products">
+          <select id="categorySelect">
+              <option value="all">All Categories</option>
+              <option value="electronics">Electronics</option>
+              <option value="fashion">Fashion</option>
+              <option value="home">Home Appliances</option>
+          </select>
+          <button type="button">Search</button>
+      </div>
+  
+      <!-- Icons Section -->
+      <div class="icons-section">
+          <div class="icon-item">
+              <i class="fas fa-user "></i>
+              <p>Profile</p>
+          </div>
+          <div class="icon-item">
+              <i class="fas fa-envelope"></i>
+              <p>Messages</p>
+          </div>
+          <div class="icon-item">
+              <i class="fas fa-box"></i>
+              <p>Orders</p>
+          </div>
+          <div class="icon-item">
+              <i class="fas fa-shopping-cart"></i>
+              <p>My Cart</p>
+          </div>
+      </div>
+  
+      <!-- Hamburger Menu for Mobile -->
+      <div class="hamburger-menu">
+          ☰
+      </div>
+  </nav>
+  
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+      <div class="icon-item">
+          <i class="fas fa-user "></i>
+          <p>Profile</p>
+      </div>
+      <div class="icon-item">
+          <i class="fas fa-envelope"></i>
+          <p>Messages</p>
+      </div>
+      <div class="icon-item">
+          <i class="fas fa-box"></i>
+          <p>Orders</p>
+      </div>
+      <div class="icon-item">
+          <i class="fas fa-shopping-cart"></i>
+          <p>My Cart</p>
+      </div>
+  </div>
+  <nav class="navbar2">
+      <div class="nav-left">
+        <!-- <button id="hamburger-menu" class="hamburger">
+          ☰ Categories
+        </button> -->
+        <!-- <li id="hamburger-menu" class="hamburger"> -->
+          <div class="hamburger">
+            ☰
+        </div>
+          <ul class="nav-icons">
+          <li><a href="#" >All Categories</a></li>
+          <li><a href="#" id="chid">Gift Boxes</a></li>
+          <li><a href="#" id="chid">Hot Offers</a></li>
+          <li><a href="#" id="chid">Projects</a></li>
+          <li><a href="#" id="chid">Menu items</a></li>
+          <li><a href="#" id="chid">Help</a></li>
+        </ul>
+      </div>
+     
+      <div class="nav-right">
+        <div class="dropdown">
+          <button class="dropbtn">English,USD</button>
+          <div class="dropdown-content">
+            <a href="#">English</a>
+            <a href="#">Español</a>
+            <a href="#">Français</a>
+          </div>
+        </div>
+        
+        <div class="dropdown">
+          <button class="dropbtn">Ship To</button>
+          <div class="dropdown-content">
+            <a href="#">USA</a>
+            <a href="#">Canada</a>
+            <a href="#">UK</a>
+          </div>
+        </div>
+      </div>
+      <!-- Hamburger Menu for Mobile -->
+      <div class="hamburger-menu">
+        ☰
+    </div>
+    </nav>
+      
+      <!-- Main Container -->
+      <div class="main-container">
+          <!-- Sidebar -->
+          <aside class="sidebar">
+              <h2>Filters</h2>
+              <div class="filter">
+                  <h3>Category</h3>
+                  <ul>
+                      <li> Mobile accessories</li>
+                      <li> Electronics</li>
+                      <li> Home Appliances</li>
+                      <li> Smartphones</li>
+                  </ul>
+              </div>
+              <hr>
+              
+              <div class="filter">
+                  <h3>Brand</h3>
+                  <ul>
+                      <li><input type="checkbox"> Samsung </li>
+                      <li><input type="checkbox"> Apple </li>
+                      <li><input type="checkbox"> Huawei </li>
+                      <li><input type="checkbox"> Pocco </li>
+                      <li><input type="checkbox"> Lenovo </li>
+                  </ul>
+              </div>
+              <hr>
+              <div class="filter">
+                <h3>Features</h3>
+                <ul>
+                    <li><input type="checkbox"> Metalic </li>
+                    <li><input type="checkbox"> Plastic cover </li>
+                    <li><input type="checkbox"> 8GB Ram </li>
+                    <li><input type="checkbox"> Super power </li>
+                    <li><input type="checkbox"> Large Memory </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="filter">
+              <h3>Price Range</h3>
+              <input style="margin-left: 30px;" type="range" min="0" max="1000">
+          </div>
+          <hr>
+            <div class="filter">
+              <h3>Conditions</h3>
+              <ul>
+                  <li><input type="checkbox"> Any </li>
+                  <li><input type="checkbox"> Refurnished </li>
+                  <li><input type="checkbox"> Brand new </li>
+                  <li><input type="checkbox"> Old items </li>
+                  <li><input type="checkbox"> Lenovo </li>
+              </ul>
+          </div>
+          <hr>
+          <div class="filter">
+            <h3>Ratings</h3>
+            <ul>
+                <li><input type="checkbox"> ⭐⭐⭐⭐⭐ </li>
+                <li><input type="checkbox"> ⭐⭐⭐⭐★ </li>
+                <li><input type="checkbox"> ⭐⭐⭐★★ </li>
+                <li><input type="checkbox"> ⭐⭐★★★ </li>
+                <li><input type="checkbox"> ⭐★★★★ </li>
+            </ul>
+        </div>
+          </aside>
+        <!-- Products Section -->
+        <section class="products-container">
+          <div class="product-grid" id="product-list">
+              <!-- Products will be dynamically inserted here -->
+          </div>
+          <!-- Pagination Controls -->
+          <div class="pagination">
+              <button id="prev-page">Previous</button>
+              <!-- <span id="pageInfo">1 / 1</span> -->
+              <button id="next-page">Next</button>
+          </div>
+      </section>
+
+
+  <script src="prolist.js"></script>
+</body>
+</html>

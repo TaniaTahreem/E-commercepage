@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="productdetail.css">
+</head>
+<body>
+  
+    <div class="product-details">
+      <div class="product-images">
+        <img id="main-image" src="" alt="Product Image">
+        <div class="image-thumbnails">
+            <img src="Images/image-1 (10).jpeg" alt="Thumbnail" onclick="changeImage(this.src)">
+            <img src="Images/image-1 (12).jpg" alt="Thumbnail" onclick="changeImage(this.src)">
+            <img src="Images/image-1 (11).jpeg" alt="Thumbnail" onclick="changeImage(this.src)">
+        </div>
+    </div>
+    
+
+        <!-- Right Section: Product Information -->
+        <section class="product-info">
+            
+            <h1 class="product-title">Product Details</h1>
+            <p class="product-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi dolorum doloribus dignissimos quos possimus vitae delectus sint 
+                magni pariatur ducimus! Necessitatibus dolores quae numquam accusamus, ipsam repellendus rerum odio nemo!
+                his is a detailed description of the product. It highlights the key features, specifications, and benefits of using the product.
+            </p>
+            <div class="product-rating">
+                <span>⭐⭐⭐⭐☆</span>
+                <span>(120 reviews)</span>
+            </div>
+            <div class="product-price">
+                <span class="discounted-price">$199.99</span>
+                <span class="original-price">$249.99</span>
+            </div>
+            <div class="product-options">
+                <label for="colors">Color:</label>
+                <select id="colors">
+                    <option>Red</option>
+                    <option>Blue</option>
+                    <option>Green</option>
+                </select>
+            </div>
+            <div class="add-to-cart">
+                <input type="number" value="1" min="1">
+                <button>Add to Cart</button>
+            </div>
+        </section> 
+</div>
+     <!-- Related Products Section -->
+     <div class="related-products">
+        <h2>Related Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="Images/image-1 (13).jpeg" alt="Product">
+                <p>Product Name</p>
+                <span>$99.99</span>
+            </div>
+            <div class="product-card">
+                <img src="Images/image-1 (14).jpeg" alt="Product">
+                <p>Product Name</p>
+                <span>$89.99</span>
+            </div>
+            <div class="product-card">
+                <img src="Images/image-1 (15).jpeg" alt="Product">
+                <p>Product Name</p>
+                <span>$79.99</span>
+            </div>
+            <div class="product-card">
+                <img src="Images/image-1 (16).jpeg" alt="Product">
+                <p>Product Name</p>
+                <span>$79.99</span>
+            </div>
+            <div class="product-card">
+                <img src="Images/image-1 (17).jpeg" alt="Product">
+                <p>Product Name</p>
+                <span>$79.99</span>
+            </div>
+            <div class="product-card">
+                <img src="Images/image-1 (1).jpeg" alt="Product">
+                <p>Product Name</p>
+                <span>$79.99</span>
+            </div>
+        </div>
+    </div>
+  </main>
+  <script src="prodetail.js"></script>
+</body>
+</html>
